@@ -1,0 +1,123 @@
+/* Normal desktop*/
+@media(max-width:1200px){
+	/* 2. header area style */
+	.price-btn{
+		display: none;
+	}
+	/* 3. slider area style*/
+	.slides-contend-box h1{
+		font-size: 90px;
+	}
+	/* 4. about-area style */
+	.counter-item .count-numb{
+		font-size: 40px;
+	}
+}
+
+/* Tablet desktop */
+@media(max-width:992px){
+	/* 2. header area style */
+	.hamburger-menu{
+		display: block;
+	}
+	.hamburger-menu.toggle span{
+		background-color: transparent;
+	}
+	.hamburger-menu.toggle span::before{
+		background: #32beff;
+		transform: rotate(45deg);
+		top: 0;
+	}
+	.hamburger-menu.toggle span::after{
+		background: #32beff;;
+		transform: rotate(-45deg);
+		bottom: 0;
+	}
+	.header_area nav{
+		position: absolute;
+		top: 100%;
+		left: -100%;
+		width: 100%;
+		background: #e6e6e6;;
+		transition: all 0.3s ease-out 0s;
+		overflow: hidden;
+		z-index: 9999;
+	}
+	.header_area nav.active{
+		left: 0;
+	}
+	.header_area nav ul{
+		flex-direction: column;
+	}
+	.header_area nav ul li a{
+		color: #000000;;
+		padding: 32px 16px;
+		height: 60px;
+		line-height: 0;
+	}
+	.header_area nav ul li a:hover{
+		border-bottom:none;
+		color: #000000;
+		background-color: #32beff;
+	}
+
+	/* 3. slider area style*/
+	.slides-contend-box{
+		padding: 140px 0;
+	}
+	.slides-contend-box h1{
+		font-size: 65px;
+	}
+	/* 4. about-area style */
+	.about-left-content{
+		padding-right: 15px;
+		margin-bottom: 50px;
+	}
+	.counter-item .count-numb{
+		font-size: 60px;
+	}
+}
+/*  mobile */
+@media(max-width:768px){
+		/* 3. slider area style*/
+		.slides-contend-box{
+			padding: 120px 0;
+		}
+		.slides-contend-box h1{
+			font-size: 85px;
+		}
+}
+/*Extra small devices*/
+@media (max-width: 576px) {
+		.theme-btn {
+			padding: 10px 20px;
+		}
+		/* 3. slider area style*/
+		.slides-contend-box{
+			padding: 100px 0;
+		}
+		.slides-contend-box .big-text{
+			font-size: 80px;
+		}
+		.slides-contend-box h1{
+			font-size: 58px;
+		}
+		/* 4. about-area style */
+		.about-left-content .qouet-text{
+			padding: 90px 40px 40px 90px;
+		}
+		.about-left-content .qouet-text::before{
+			font-size: 65px;
+			left: 23px;
+		}
+		.about-left-content .qouet-text p::after{
+			left: -36px;
+		}
+		.counter-box{
+			flex-direction: column;
+			align-items: center;
+		}
+		.counter-item:not(:last-child)::after{
+			display: none;
+		}
+ }
