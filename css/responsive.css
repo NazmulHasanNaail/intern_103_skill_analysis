@@ -13,11 +13,18 @@
 		font-size: 40px;
 	}
 	/* 5. services area style */
+	.services-area{
+		padding-bottom: 295px;
+	}
 	.services-left-side{
 		padding-right: 15px;
 	}
 	.services-left-area-content .image-box{
 		margin-left: 175px;
+	}
+	/* 6. how_we_do area style */
+	.how-we-do-slider{
+		margin-top: -150px;
 	}
 }
 
@@ -84,11 +91,18 @@
 		font-size: 60px;
 	}
 	/* 5. services area style */
+	.services-area{
+		padding-bottom: 275px;
+	}
 	.cta-are{
 		padding: 40px;
 	}
 	.cta-are p{
 		font-size: 20px;
+	}
+	/* 6. how_we_do area style */
+	.how-we-do-slider{
+		margin-top: -130px;
 	}
 }
 /*  mobile */
@@ -99,6 +113,14 @@
 		}
 		.slides-contend-box h1{
 			font-size: 85px;
+		}
+		/* 5. services area style */
+		.services-area{
+			padding-bottom: 245px;
+		}
+		/* 6. how_we_do area style */
+		.how-we-do-slider{
+			margin-top: -100px;
 		}
 }
 /*Extra small devices*/
@@ -152,4 +174,13 @@
 		.cta-are{
 			padding: 20px;
 		}
+		/* 5. services area style */
+		.services-area{
+			padding-bottom: 250px;
+		}
+		/* 6. how_we_do area style */
+		.how-we-do-slider{
+			margin-top: -120px;
+		}
+		
  }
