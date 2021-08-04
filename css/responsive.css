@@ -12,6 +12,13 @@
 	.counter-item .count-numb{
 		font-size: 40px;
 	}
+	/* 5. services area style */
+	.services-left-side{
+		padding-right: 15px;
+	}
+	.services-left-area-content .image-box{
+		margin-left: 175px;
+	}
 }
 
 /* Tablet desktop */
@@ -76,6 +83,13 @@
 	.counter-item .count-numb{
 		font-size: 60px;
 	}
+	/* 5. services area style */
+	.cta-are{
+		padding: 40px;
+	}
+	.cta-are p{
+		font-size: 20px;
+	}
 }
 /*  mobile */
 @media(max-width:768px){
@@ -119,5 +133,23 @@
 		}
 		.counter-item:not(:last-child)::after{
 			display: none;
+		}
+		/* 5. services area style */
+		.services-left-area-content .rotate-text-box{
+			width: 294px;
+			height: 110px;
+			font-size: 20px;
+		}
+		.services-left-area-content .rotate-text-box .big-text{
+			font-size: 60px;
+			line-height: 40px;
+		}
+		.services-left-area-content .image-box{
+			margin-left: 111px;
+			width: 179px;
+			height: 294px
+		}
+		.cta-are{
+			padding: 20px;
 		}
  }

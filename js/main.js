@@ -19,20 +19,53 @@
 	});
 
 	//slider
-	const swiper = new Swiper('.hero-slider', {
-		// Optional parameters
+	var swiper = new Swiper('.hero-slider', {
 		loop: true,
-
-		// If we need pagination
 		pagination: {
 			el: '.swiper-pagination',
 		},
-
-		// Navigation arrows
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+	});
+
+	//how-we-do-slider
+	var swiper = new Swiper('.how-we-do-slider', {
+		loop: true,
+		slidesPerView: 1,
+		initialSlide: 1,
+		spaceBetween: 10,
+		centeredSlides: true,
+		lazyLoadingInPrevNext: true,
+		keyboardControl: true,
+		mousewheelControl: false,
+		lazyLoading: true,
+		preventClicks: false,
+		preventClicksPropagation: false,
+		lazyLoadingInPrevNext: true,
+		effect: 'coverflow',
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 50,
+			depth: 250,
+			modifier: .5,
+			slideShadows: false,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			575: {
+				slidesPerView: 2,
+				spaceBetween: 5,
+			}
+		}
 	});
 
 

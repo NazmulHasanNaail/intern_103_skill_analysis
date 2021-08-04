@@ -13,8 +13,8 @@
 3. slider
 4. about-area
 5. services
-6. department
-7. team
+6. how_we_do
+7. portfolio
 8. video-area
 9. counter
 10. footer
@@ -82,8 +82,8 @@ h6 {
 	color: #000000;
 	margin-top: 0px;
 	font-style: normal;
-	font-weight: 400;
-	text-transform: normal;
+	font-weight: 500;
+	margin-bottom: 1rem;
 }
 h1 a,
 h2 a,
@@ -464,9 +464,105 @@ header{
 /* 5. services area style */
 .services-area{
 	background-color: #3D4146;
-	padding: 120px 0;
+	padding-top: 120px;
+	padding-bottom: 335px;
+}
+.services-left-side{
+	padding-right: 90px;
+}
+.services-left-area{
+	border-bottom: 1px solid #535A62;
+}
+.services-left-area-content{
+	background-color: #3D4146;
+	position: relative;
+}
+.services-left-area-content .rotate-text-box{
+	position: absolute;
+	font-size: 30px;
+	font-weight: 500;
+	width: 500px;
+    height: 175px;
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-100%);
+	top: 0;
+}
+.services-left-area-content .rotate-text-box span{
 	color: #fff;
 }
+.services-left-area-content .rotate-text-box .big-text{
+	font-size: 100px;
+	display: block;
+	line-height: 70px;
+	margin-bottom: 10px;
+	margin-left: -5px;
+}
+.services-left-area-content .image-box{
+	margin-left: 190px;
+	width: 275px;
+	height: 100%;
+	overflow: hidden;
+}
+.services-left-area-content .image-box img{
+	height: 100%;
+	width: auto;
+	object-fit: cover;
+}
+.services-left-area-text{
+	margin-top: 60px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.389;
+}
+.services-right-side{
+	border-top: 1px solid #535A62;
+	padding-top: 22px;
+}
+.services-item{
+	margin-top: 55px;
+}
+.services-item i{
+	font-size: 90px;
+	color: #1eaff0;
+}
+.services-item .icon-box{
+	margin-bottom: 20px;
+}
+.services-item h3{
+	color: #fff;
+	text-decoration: underline;
+}
+.services-item p{
+	color: #cdcdcd;
+}
+/*cta-are*/
+.cta-are{
+	background-color: #fff;
+	padding: 65px;
+	border-radius: 2px;
+	margin-top: 80px;
+}
+.cta-are p{
+	font-size: 24px;
+	font-weight: 500;
+	color: #000000;
+}
+.cta-are .cta-btn-box{
+	text-align: center;
+}
+/* 6. how_we_do area style */
+.how-we-do-are{
+	padding-bottom: 120px;
+	background:linear-gradient( 90deg, rgb(150,159,255) 30%, rgb(50,220,230) 100%);
+}
+.how-we-do-slider{
+	margin-top: -190px;
+}
+.how-we-do-bottom-area{
+	padding-top: 133px;
+}
+/* 7. portfolio area style */
+  
   
 
   
