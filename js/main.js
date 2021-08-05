@@ -69,49 +69,46 @@
 	});
 
 
+	//how-we-do progress-bar
+	var delay = 500;
+	$(".progress-bar").each(function (i) {
+		$(this).delay(delay * i).animate({ width: $(this).attr('aria-valuenow') + '%' }, delay);
 
-
-
-
-	/* magnificPopup img view */
-	$('.popup-image').magnificPopup({
-		type: 'image',
-		gallery: {
-			enabled: true
-		}
-	});
-
-	/* magnificPopup video view */
-	$('.popup-video').magnificPopup({
-		type: 'iframe'
-	});
-
-
-	// isotop
-	$('.grid').imagesLoaded(function () {
-		// init Isotope
-		var $grid = $('.grid').isotope({
-			itemSelector: '.grid-item',
-			percentPosition: true,
-			masonry: {
-				// use outer width of grid-sizer for columnWidth
-				columnWidth: '.grid-item',
+		$(this).prop('Counter', 0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: delay,
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(Math.ceil(now) + '%');
 			}
 		});
 	});
 
+	//protfolion-mansonary-layout
+	var $grid = $('.portfolio-active').isotope({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		masonry: {
+			// use outer width of grid-sizer for columnWidth
+			columnWidth: 1,
+		}
+	})
 	// filter items on button click
-	$('.portfolio-menu').on('click', 'button', function () {
+	$('.filters').on('click', 'a', function () {
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });
 	});
-
 	//for menu active class
-	$('.portfolio-menu button').on('click', function (event) {
+	$('.filters a').on('click', function (event) {
 		$(this).siblings('.active').removeClass('active');
 		$(this).addClass('active');
 		event.preventDefault();
 	});
+
+
+
+
 
 
 
@@ -133,3 +130,4 @@
 
 
 })(jQuery);
+

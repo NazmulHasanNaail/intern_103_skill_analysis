@@ -15,8 +15,8 @@
 5. services
 6. how_we_do
 7. portfolio
-8. video-area
-9. counter
+8. team-area
+9. prices-area 
 10. footer
 */
 
@@ -553,16 +553,188 @@ header{
 /* 6. how_we_do area style */
 .how-we-do-are{
 	padding-bottom: 120px;
-	background:linear-gradient( 90deg, rgb(150,159,255) 30%, rgb(50,220,230) 100%);
+	background:linear-gradient( 90deg, rgb(150,159,255) 0%, rgb(50,220,230) 100%);
 }
 .how-we-do-slider{
-	margin-top: -190px;
+	margin-top: -240px;
+	padding-bottom: 85px;
+	padding-top: 50px;
+}
+.how-we-do-slider .swiper-slide-active{
+	position: relative;
+	box-shadow: 6.339px 13.595px 30px 0px rgba(0, 0, 0, 0.3);
+}
+.how-we-do-slider .swiper-slide-active::before{
+	content: "";
+	height: 23px;
+	width: 21px;
+	background-image: url(../img/slider-icon2.png);
+	z-index: 2;
+	position: absolute;
+	top: -40px;
+	right: -40px;
+}
+.how-we-do-slider .swiper-slide-active::after{
+	content: "";
+	height: 190px;
+	width: 180px;
+	background-image: url(../img/slider-icon.png);
+	z-index: 2;
+	position: absolute;
+	bottom: -82px;
+	left: -90px;
 }
 .how-we-do-bottom-area{
-	padding-top: 133px;
+	padding-top: 58px;
 }
-/* 7. portfolio area style */
+.how-we-do-are .section-heading{
+	color: #fff;
+}
+.how-we-do-bottom-left-area{
+	padding-right: 90px;
+}
+.how-we-do-bottom-left-area h2{
+	margin-bottom: 45px;
+}
+.progress-bar-area{
+	padding-top: 80px;
+}
+.progress-bar-area .progress-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+	position: relative;
+}
+.progress-item .proress-label{
+	width: 160px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-right: 37px;
+	color: #fff;
+}
+.progress-item .proress-label::before{
+	content: "//";
+	font-weight: 500;
+	margin-right: 15px;
+	font-size: 12px;
+	color: #1eaaf0;;
+}
+.progress-item .progress {
+	flex-grow: 1;
+	background-color: #1eaaf0;
+	margin-right: 40px;
+	height: 10px;
+	border-radius: 5px;
+  }
+.progress-item .progress-text{
+	color: #fff;
+}  
+.progress-item .progress-bar {
+	width: 0;
+	background-color: #fff;
+	color: #fff;
+	border-radius: 5px;
+  }
   
+  
+/* 7. portfolio area style */
+.portfolio-are{
+	padding-top: 120px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #e6e6e6;
+	max-width: 1920px;
+}
+
+.portfolio-are .filters {
+	display: flex;
+	justify-content: flex-end;
+}
+.filters li a {
+	display: block;
+	text-transform: capitalize;
+	text-align: center;
+	transition: all 0.2s ease-in-out; 
+	color: #969696;
+	font-size: 15px;
+	padding-left: 15px;
+}
+.filters li:not(:last-child) a::after{
+	display: inline;
+	content: "/";
+	margin-left: 15px;
+	color: #969696;
+}
+.filters li a:hover {
+	color: #000000; 
+}
+.filters a.active{
+	color: #000000; 
+}
+.portfolio-item {
+	margin-top: 20px;
+	position: relative; 
+}
+
+.portfolio-item img {
+	width: 100%; 
+}
+.portfolio-are .loadmore-btn{
+	text-align: center;
+	margin-top: 60px;
+}
+.portfolio-are .loadmore-btn a{
+	font-size: 16px;
+	font-weight: 500;
+	color: #1eaff0;
+}
+.portfolio-are .loadmore-btn i{
+	font-size: 14px;
+	color: #1eaff0;
+}
+
+
+/* 8. team-area style */
+.team-area{
+ padding: 120px 0;
+}
+.team-area h2{
+	margin-bottom: 30px;
+}
+.team-area-left-area{
+	padding-right: 90px;
+	margin-bottom: 60px;
+}
+.team-item{
+	margin-bottom: 50px;
+}
+.team-item .team-thumb{
+	height: 280px;
+	overflow: hidden;
+}
+.team-item .team-thumb img{
+	max-width: 100%;
+}
+.team-item h3{
+	margin-top: 30px;
+}
+.team-social{
+	display: flex;
+	margin-top: 20px;
+}
+.team-social a{
+	font-size: 16px;
+	color: #5f5f5f;
+	margin-right: 15px;
+}
+.team-social a:hover{
+	color: #1eaff0;
+}
+  
+/* 9. prices-area style */
+.prices-area{
+	padding: 120px 0;
+	background-color: #e6e6e6;	
+}
   
 
   

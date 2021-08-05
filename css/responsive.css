@@ -26,6 +26,9 @@
 	.how-we-do-slider{
 		margin-top: -150px;
 	}
+	.how-we-do-bottom-left-area{
+		padding-right: 0;
+	}
 }
 
 /* Tablet desktop */
@@ -104,6 +107,14 @@
 	.how-we-do-slider{
 		margin-top: -130px;
 	}
+	/* 7. portfolio area style */
+	.filters li a {
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	.filters li:not(:last-child) a::after{
+		margin-left: 10px;
+	}
 }
 /*  mobile */
 @media(max-width:768px){
@@ -121,6 +132,11 @@
 		/* 6. how_we_do area style */
 		.how-we-do-slider{
 			margin-top: -100px;
+		}
+		.team-item{
+			margin-right: auto;
+			margin-left: auto;
+			width: 280px;
 		}
 }
 /*Extra small devices*/
@@ -181,6 +197,37 @@
 		/* 6. how_we_do area style */
 		.how-we-do-slider{
 			margin-top: -120px;
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+		.how-we-do-slider .swiper-slide-active::before,
+		.how-we-do-slider .swiper-slide-active::after{
+			display: none;
+		}
+		.how-we-do-bottom-left-area h2{
+			font-size: 28px;
+		}
+		.progress-item .proress-label{
+			width: 130px;
+			margin-right: 10px;
+		}
+		.progress-item .progress {
+			margin-right: 10px;
+		}
+		/* 7. portfolio area style */
+		.filters li a {
+			font-size: 13px;
+			padding-left: 5px;
+		}
+		.filters li:not(:last-child) a::after{
+			margin-left: 5px;
+		}
+		/* 8. team-area style */
+		.team-area-left-area{
+			padding-right: 0;
+		}
+		.team-area h2{
+			font-size: 28px;
 		}
 		
  }
