@@ -17,6 +17,8 @@
 7. portfolio
 8. team-area
 9. prices-area 
+10. timeline-area
+10. timeline-area
 10. footer
 */
 
@@ -734,6 +736,106 @@ header{
 .prices-area{
 	padding: 120px 0;
 	background-color: #e6e6e6;	
+}
+.prices-area .big-text{
+	font-size: 100px;
+	display: block;
+	color: #fff;
+	font-weight: 500;
+	line-height: 80px;
+}
+.prices-area .medium-text{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 25px;
+	display: block;
+}
+.pricing-table{
+
+}
+.pricing-table .pricing{
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.18);
+}
+.pricing.popular .pricing-header{
+	background-color: #32beff;
+	color: #fff;
+}
+.pricing.popular{
+	transform: scale(1.03, 1.1);
+	z-index: 1;
+	position: relative;
+}
+.pricing-header{
+	position: relative;
+	padding: 35px;
+	background-color:#f9f9f9;
+	border-radius: 12px;
+	color: #000000;
+}
+.pricing-header .price{
+	font-size: 50px;
+	display: block;
+	line-height: 55px;
+}
+.pricing-header .title{
+	font-size: 25px;
+	display: block;
+}
+.pricing-header .price-tag{
+	padding: 4px 10px;
+	border-radius: 12px;
+	background-color: red;
+	position: absolute;
+	top: 35px;
+	right: 15px;
+}
+.pricing-featured{
+	padding: 30px 35px;
+}
+.pricing-featured li{
+	margin-bottom: 10px;
+}
+.pricing-featured li::before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f105";
+	display: inline-block;
+	padding-right: 10px;
+	vertical-align: middle;
+	font-weight: 900;
+	font-size: 14px;
+	color: #1eaff0;
+}
+.pricing-featured li span{
+	font-weight: 500;
+	color: #000000;
+}
+.pricing-footer{
+	padding: 20px 35px 40px 35px;
+}
+.pricing-footer .pricing-btn{
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 12px;
+	padding: 18px 108px;
+	background:#f9f9f9;
+	color: #000000;
+}
+.pricing.popular .pricing-btn{
+	background: linear-gradient( -90deg, rgb(120,120,250) 1%, rgb(50,220,230) 100%);
+	color: #fff;
+}
+.pricing-footer .pricing-btn:hover{
+	opacity: 0.8;
+}
+
+  
+  
+
+/* 10. timeline-area style */
+.timeline-area{
+	padding: 120px 0;
 }
   
 
