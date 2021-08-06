@@ -19,7 +19,7 @@
 9. prices-area 
 10. timeline-area
 11. contact-us
-12. footer
+12. footer 
 */
 
 
@@ -140,47 +140,7 @@ label {
 	font-size: 14px;
 	font-weight: 400;
 }
-*::-moz-selection {
-	background: #d6b161;
-	color: #fff;
-	text-shadow: none;
-}
-::-moz-selection {
-	background: #444;
-	color: #fff;
-	text-shadow: none;
-}
-::selection {
-	background: #444;
-	color: #fff;
-	text-shadow: none;
-}
-*::-moz-placeholder {
-	color: #555555;
-	font-size: 14px;
-	opacity: 1;
-}
-*::placeholder {
-	color: #555555;
-	font-size: 14px;
-	opacity: 1;
-}
-.theme-overlay {
-	position: relative
-}
-.theme-overlay::before {
-	background: #1696e7 none repeat scroll 0 0;
-	content: "";
-	height: 100%;
-	left: 0;
-	opacity: 0.6;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-.separator {
-	border-top: 1px solid #f2f2f2
-}
+
 .section-heading{
 	font-weight: 500;
 	color:#32beff;
@@ -211,10 +171,6 @@ label {
 	opacity: 0.6;
 	color: #fff;
 }
-.breadcrumb > .active {
-	color: #888;
-}
-
 
 /* scrollUp */
 #scrollUp {
@@ -737,6 +693,9 @@ header{
 	padding: 120px 0;
 	background-color: #e6e6e6;	
 }
+.prices-area .mb{
+	margin-bottom: 90px;
+}
 .prices-area .big-text{
 	font-size: 100px;
 	display: block;
@@ -751,7 +710,7 @@ header{
 	display: block;
 }
 .pricing-table{
-
+	margin-bottom: -340px;
 }
 .pricing-table .pricing{
 	background-color: #fff;
@@ -820,7 +779,10 @@ header{
 	font-size: 18px;
 	font-weight: 500;
 	border-radius: 12px;
-	padding: 18px 108px;
+	padding: 18px;
+	width: 100%;
+	display: block;
+	text-align: center;
 	background:#f9f9f9;
 	color: #000000;
 }
@@ -834,10 +796,12 @@ header{
 
 /* 10. timeline-area style */
 .timeline-area{
-	padding: 120px 0;
+	padding-top: 395px;
+	padding-bottom: 120px;
 }
 .timeline-wrapper{
-
+	border-top: 1px solid #e6e6e6;
+	padding-top: 120px;
 }
 .timeline-top-area{
 	background-color: #f9f9f9;
@@ -854,12 +818,13 @@ header{
 .timeline-item{
 	padding-bottom: 78px;
 	position: relative;
+	padding-left: 50px;
 }
 .timeline-item.last-child{
 	padding-bottom: 20px;
 }
 .timeline-info{
-	padding-bottom: 115px;
+	padding-bottom: 90px;
 	position: relative;
 }
 .timeline-info .date{
@@ -875,14 +840,14 @@ header{
 	position: absolute;
 	bottom: 0;
 }
-.timeline-item .order-md-1 .timeline-info::after{
+.timeline-item .order-lg-1 .timeline-info::after{
 	right: 70px;
 }
-.timeline-item .order-md-1 .timeline-info{
+.timeline-item .order-lg-1 .timeline-info{
 	text-align: right;
 	padding-right: 70px;
 }
-.timeline-item .order-md-2 .timeline-img-box{
+.timeline-item .order-lg-2 .timeline-img-box{
 	padding-left: 70px;
 }
 .timeline-marker{
@@ -947,13 +912,13 @@ header{
 	color: #e6e6e6;
 }
 .timeline-img-box{
-
+	margin-bottom: 0;
 }
-.timeline-item .order-md-1 .timeline-img-box{
+.timeline-item .order-lg-1 .timeline-img-box{
 	text-align: right;
 	padding-right: 70px;
 }
-.timeline-item .order-md-2 .timeline-info{
+.timeline-item .order-lg-2 .timeline-info{
 	padding-left: 70px;
 }
 .timeline-item-end{
@@ -965,9 +930,128 @@ header{
 }
 /* 11. contact-us style */  
 .contact-us-area{
-	background-color: #000000;
+	background-color: #3B4044;
 	padding: 120px 0;
 }
-
-
+.contact-us-area .section-heading{
+	padding-top: 10px;
+	margin-bottom: 40px;
+}
+.contact-us-area h2{
+	color: #fff;
+	line-height: 1.389;
+}
+.contact-us-area address{
+	margin-top: 28px;
+	color: #fff;
+}
+.contact-us-area address span{
+	display: block;
+}
   
+.contact-box input[type="text"],
+.contact-box input[type="email"],
+.contact-box textarea{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	background-color:#3B4044;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #535A62;
+	padding-left: 120px;
+	color: #fff;
+
+}
+.contact-box label{
+	position: absolute;
+	left: 15px;
+	line-height: 42px;
+	color: #ffff;
+	font-size: 15px;
+	font-weight: 700;
+	border-bottom: 1px solid #fff;
+}
+.contact-box span{
+	display: block;
+	text-align:right;
+	margin-top: 15px;
+	color: #78828c;
+}
+.contact-box .theme-btn{
+	border-radius: 30px;
+	padding: 24px 60px;
+	font-weight: 400;
+	font-size: 16px;
+}
+  
+/* 12. footer area style */ 
+.footer-area{
+
+}
+.footer-top-area{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.footet-contact-number{
+
+}
+.footet-contact-number h5{
+	font-weight: 700;
+}
+.footer-logo{
+	border-right: 1px solid #e6e6e6;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.footet-contact-number{
+	padding-left: 40px;
+}
+.footet-contact-number .contact-numb-box{
+	display: flex;
+	align-items: center;
+}
+.footet-contact-number a{
+	font-size: 36px;
+	color: #5f5f5f;
+	text-decoration: none;
+	display: inline;
+}
+.footet-contact-number span{
+	height: 45px;
+	width: 45px;
+	border-radius: 100%;
+	background: #1eaff0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+}
+.footet-contact-number i{
+	font-size: 18px;
+	color: #fff;
+	transform: rotate(90deg);
+}
+.footer-bottom-area{
+	padding: 25px 0;
+}
+.footer-social-site{
+	display: flex;
+}
+.footer-social-site li{
+	padding-right: 13px;
+}
+.footer-social-site a{
+	color:#969696;
+}
+.footer-social-site a:hover{
+	color: #000000;
+}
+.copyright{
+	display: inline-block;
+	color: #000000;
+}
+.copyright a{
+	color: #1eaff0;;
+}

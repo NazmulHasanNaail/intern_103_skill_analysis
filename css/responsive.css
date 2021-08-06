@@ -29,6 +29,31 @@
 	.how-we-do-bottom-left-area{
 		padding-right: 0;
 	}
+	/* 9. prices-area style */
+	.prices-area .big-text{
+		font-size: 90px;
+	}
+	.pricing-featured{
+		padding: 30px;
+	}
+	.pricing-footer{
+		padding: 20px 30px 40px 30px;
+	}
+	.pricing-header{
+		padding:35px 30px;
+	}
+	/* 10. timeline-area */
+	.timeline-top-area{
+		padding: 50px 50px;
+	}
+	/* 12. footer area style */
+	.footet-contact-number h5{
+		font-size: 16px;
+	} 
+	.footet-contact-number a{
+		font-size: 30px;
+	}
+
 }
 
 /* Tablet desktop */
@@ -115,6 +140,80 @@
 	.filters li:not(:last-child) a::after{
 		margin-left: 10px;
 	}
+	/* 9. prices-area style */
+	.prices-area .big-text{
+		font-size: 70px;
+	}
+	.pricing-table .pricing{
+		margin-top: 80px;
+	}
+	.pricing.popular{
+		transform: scale(1);
+	}
+
+	/* 10. timeline-area */
+	.timeline-area h2{
+		font-size: 28px;
+	}
+	.timeline-top-area p{
+		padding-left: 0;
+	}
+	.timeline-img-box{
+		margin-bottom: 10px;
+	}
+	.timeline-item .order-lg-1 .timeline-info::after{
+		left: 0;
+	}
+
+	.timeline-item .order-lg-1 .timeline-info{
+		text-align: left;
+		padding-right: 0;
+	}
+	.timeline-item .order-lg-2 .timeline-img-box{
+		padding-left: 0;
+	}
+	.timeline-item .order-lg-1 .timeline-img-box{
+		text-align: left;
+		padding-right: 0;
+	}
+	.timeline-item .order-lg-2 .timeline-info{
+		padding-left: 0;
+	}
+
+	.timeline-marker{
+		position: absolute;
+		left: 0;
+		transform: translateX(-100%);
+	}
+	/* 11. contact-us style */ 
+	.contact-left-side{
+		margin-bottom: 80px;
+	}
+	/* 12. footer area style */
+	.footet-contact-number{
+		padding-left: 0;
+	}
+		/* 12. footer area style */
+		.footet-contact-number h5{
+			font-size: 15px;
+		} 
+		.footet-contact-number a{
+			font-size: 23px;
+		}
+		.footet-contact-number span{
+			height: 40px;
+			width: 40px;
+		}
+		.footet-contact-number i{
+			font-size: 16px;
+		}
+
+		.footer-logo{
+			padding-right: 20px;
+		}
+		.copyright{
+			margin-bottom: 30px;
+		}
 }
 /*  mobile */
 @media(max-width:768px){
@@ -137,6 +236,11 @@
 			margin-right: auto;
 			margin-left: auto;
 			width: 280px;
+		}
+		.footer-logo{
+			border: none;
+			padding-right: 0;
+			margin-bottom: 30px;
 		}
 }
 /*Extra small devices*/
@@ -227,6 +331,36 @@
 			padding-right: 0;
 		}
 		.team-area h2{
+			font-size: 28px;
+		}
+		/* 9. prices-area style */
+		.prices-area .big-text{
+			font-size: 55px;
+		}
+		.prices-area .medium-text{
+			font-size: 28px;
+		}
+		.pricing-header{
+			padding:35px 20px;
+		}
+		.pricing-featured{
+			padding: 20px;
+		}
+		.pricing-footer{
+			padding: 20px 20px 40px 20px;
+		}
+		/* 10. timeline-area style */
+		.timeline-top-area{
+			padding: 50px 20px;
+		}
+		.timeline-item{
+			padding-left: 0;
+		}
+		.timeline-marker{
+			display: none;
+		}
+		/* 11. contact-us style */ 
+		.contact-us-area h2{
 			font-size: 28px;
 		}
 		
