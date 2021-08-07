@@ -30,6 +30,9 @@
 		},
 	});
 
+	//counterup
+	$('.counter').counterUp();
+
 	//how-we-do-slider
 	var swiper = new Swiper('.how-we-do-slider', {
 		loop: true,
@@ -85,25 +88,31 @@
 		});
 	});
 
-	//protfolion-mansonary-layout
-	var $grid = $('.portfolio-active').isotope({
-		itemSelector: '.grid-item',
-		percentPosition: true,
-		masonry: {
-			// use outer width of grid-sizer for columnWidth
-			columnWidth: 1,
-		}
-	})
-	// filter items on button click
-	$('.filters').on('click', 'a', function () {
-		var filterValue = $(this).attr('data-filter');
-		$grid.isotope({ filter: filterValue });
-	});
-	//for menu active class
-	$('.filters a').on('click', function (event) {
-		$(this).siblings('.active').removeClass('active');
-		$(this).addClass('active');
-		event.preventDefault();
+
+	//image loaded 
+	$('#portfolio-are').imagesLoaded(function () {
+		// images have loaded
+
+		//protfolion-mansonary-layout
+		var $grid = $('.portfolio-active').isotope({
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+				// use outer width of grid-sizer for columnWidth
+				columnWidth: 1,
+			}
+		})
+		// filter items on button click
+		$('.filters').on('click', 'li', function () {
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({ filter: filterValue });
+		});
+		//for menu active class
+		$('.filters li').on('click', function (event) {
+			$(this).siblings('.active').removeClass('active');
+			$(this).addClass('active');
+			event.preventDefault();
+		});
 	});
 
 

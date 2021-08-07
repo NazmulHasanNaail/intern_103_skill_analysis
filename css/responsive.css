@@ -112,7 +112,7 @@
 	}
 	/* 4. about-area style */
 	.about-left-content{
-		padding-right: 15px;
+		padding-right: 0;
 		margin-bottom: 50px;
 	}
 	.counter-item .count-numb{
@@ -139,6 +139,12 @@
 	}
 	.filters li:not(:last-child) a::after{
 		margin-left: 10px;
+	}
+	/* 8. team-area style */
+	.team-area-left-area{
+		margin-right: 0px;
+		margin-bottom: 60px;
+		padding-bottom: 20px;
 	}
 	/* 9. prices-area style */
 	.prices-area .big-text{

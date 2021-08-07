@@ -418,6 +418,10 @@ header{
 }
 .counter-item .count-numb{
 	font-size: 60px;
+	color: #000000;
+}
+.counter-item .count-numb span{
+	display: inline;
 }
 /* 5. services area style */
 .services-area{
@@ -600,14 +604,16 @@ header{
 	padding-top: 120px;
 	padding-bottom: 50px;
 	border-bottom: 1px solid #e6e6e6;
-	max-width: 1920px;
+	/* max-width: 1920px;
+	margin-right: auto;
+	margin-left: auto; */
 }
 
 .portfolio-are .filters {
 	display: flex;
 	justify-content: flex-end;
 }
-.filters li a {
+.filters li{
 	display: block;
 	text-transform: capitalize;
 	text-align: center;
@@ -615,6 +621,7 @@ header{
 	color: #969696;
 	font-size: 15px;
 	padding-left: 15px;
+	cursor: pointer;
 }
 .filters li:not(:last-child) a::after{
 	display: inline;
@@ -622,10 +629,10 @@ header{
 	margin-left: 15px;
 	color: #969696;
 }
-.filters li a:hover {
+.filters li:hover {
 	color: #000000; 
 }
-.filters a.active{
+.filters li.active{
 	color: #000000; 
 }
 .portfolio-item {
@@ -659,8 +666,9 @@ header{
 	margin-bottom: 30px;
 }
 .team-area-left-area{
-	padding-right: 90px;
-	margin-bottom: 60px;
+	margin-right: 90px;
+	padding-bottom: 325px;
+	border-bottom: 1px solid #e6e6e6;
 }
 .team-item{
 	margin-bottom: 50px;

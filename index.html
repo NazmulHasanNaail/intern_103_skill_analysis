@@ -88,23 +88,29 @@
     <div class="about-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 about-left-content">
-                    <h4 class="section-heading"><i class="fas fa-bars"></i> Who we are</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-                        iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-                        feugiat nulla facilisisat vero eros et accumsan et iusto odio. Lorem ipsum dolor sit amet,
-                        consectetuer adipiscing elit, sed diam nonummy.</p>
-                    <div class="img-box">
-                        <img src="img/about.jpg" alt="about" class="img-fluid">
+                <div class="col-lg-6">
+                    <div class="about-left-content">
+                        <h4 class="section-heading"><i class="fas fa-bars"></i> Who we are</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt
+                            ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                            exerci
+                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+                            eum
+                            iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+                            feugiat nulla facilisisat vero eros et accumsan et iusto odio. Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit, sed diam nonummy.</p>
+                        <div class="img-box">
+                            <img src="img/about.jpg" alt="about" class="img-fluid">
+                        </div>
+                        <blockquote class="qouet-text">
+                            <p>
+                                Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                ut
+                                aliquip ex ea commodo consequat.
+                            </p>
+                        </blockquote>
                     </div>
-                    <blockquote class="qouet-text">
-                        <p>
-                            Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                            aliquip ex ea commodo consequat.
-                        </p>
-                    </blockquote>
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
@@ -149,15 +155,21 @@
                         <h3>Our<br> Numbers</h3>
                         <div class="counter-box">
                             <div class="counter-item">
-                                <span class="count-numb">30k</span>
+                                <div class="count-numb">
+                                    <span class="counter">30</span>K
+                                </div>
                                 <span>Coustomer</span>
                             </div>
                             <div class="counter-item">
-                                <span class="count-numb">$30M</span>
+                                <div class="count-numb">
+                                    $<span class="counter">30</span>M
+                                </div>
                                 <span>worth</span>
                             </div>
                             <div class="counter-item">
-                                <span class="count-numb">90</span>
+                                <div class="count-numb">
+                                    <span class="counter">90</span>
+                                </div>
                                 <span>products</span>
                             </div>
                         </div>
@@ -341,7 +353,7 @@
     </div>
     <!--how_we_do area end-->
     <!--Start portfolio area-->
-    <div class="portfolio-are">
+    <div class="portfolio-are" id="portfolio-are">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -349,53 +361,57 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="filters">
-                        <li><a class="active" href="#*" data-filter data-filter="*">all</a></li>
-                        <li><a href="#web" data-filter=".web">Design</a></li>
-                        <li><a href="#ui" data-filter=".ui">Web</a></li>
-                        <li><a href="#bl" data-filter=".bl">Print</a></li>
-                        <li><a href="#ui" data-filter=".ui">Branding </a></li>
-                        <li><a href="#bl" data-filter=".bl">Misc</a></li>
+                        <li class="active" data-filter="*">all</li>
+                        <li data-filter=".web">Design</li>
+                        <li data-filter=".ui">Web</li>
+                        <li data-filter=".bl">Print</li>
+                        <li data-filter=".ui">Branding </li>
+                        <li data-filter=".bl">Misc</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row portfolio-active">
-            <div class="col-sm-6 col-md-4  grid-item web ui">
+            <div class="col-sm-6 col-md-3  grid-item web ui">
                 <div class="portfolio-item">
                     <img src="img/porfolio-1.jpg" alt="my-wrork-img-3">
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4  grid-item ui bl">
-                <div class="portfolio-item">
-                    <img src="img/porfolio-1.jpg" alt="my-wrork-img-3">
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4  grid-item bl web">
+            <div class="col-sm-6 col-md-3  grid-item ui bl">
                 <div class="portfolio-item">
                     <img src="img/porfolio-2.jpg" alt="my-wrork-img-3">
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4  grid-item web ui">
+            <div class="col-sm-6 col-md-6  grid-item bl web">
                 <div class="portfolio-item">
                     <img src="img/porfolio-3.jpg" alt="my-wrork-img-3">
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4  grid-item ui bl">
+            <div class="col-sm-6 col-md-3  grid-item web ui">
                 <div class="portfolio-item">
-                    <img src="img/porfolio-1.jpg" alt="my-wrork-img-3">
+                    <img src="img/porfolio-4.jpg" alt="my-wrork-img-3">
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4  grid-item web ui">
+            <div class="col-sm-6 col-md-3  grid-item ui bl">
                 <div class="portfolio-item">
-                    <img src="img/porfolio-1.jpg" alt="my-wrork-img-3">
+                    <img src="img/porfolio-5.jpg" alt="my-wrork-img-3">
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4  grid-item web ui">
+            <div class="col-sm-6 col-md-6  grid-item web ui">
                 <div class="portfolio-item">
-                    <img src="img/porfolio-1.jpg" alt="my-wrork-img-3">
+                    <img src="img/porfolio-6.jpg" alt="my-wrork-img-3">
                 </div>
             </div>
-
+            <div class="col-sm-6 col-md-3  grid-item web ui">
+                <div class="portfolio-item">
+                    <img src="img/porfolio-7.jpg" alt="my-wrork-img-3">
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3  grid-item ui bl">
+                <div class="portfolio-item">
+                    <img src="img/porfolio-8.jpg" alt="my-wrork-img-3">
+                </div>
+            </div>
         </div>
         <div class="loadmore-btn">
             <a href="#">Load More <i class="fas fa-chevron-right"></i></a>
@@ -796,11 +812,17 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/wow.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- unused JS here -->
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- main JS here -->
     <script src="js/main.js"></script>
 </body>
 
