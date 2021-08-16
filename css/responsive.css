@@ -1,6 +1,10 @@
 /* Normal desktop*/
 @media(max-width:1200px){
 	/* 2. header area style */
+	.logo{
+		position: unset;
+		margin-right: 0;
+	}
 	.price-btn{
 		display: none;
 	}
@@ -13,24 +17,15 @@
 		font-size: 40px;
 	}
 	/* 5. services area style */
-	.services-area{
+	.themeoo-services{
 		padding-bottom: 295px;
-	}
-	.services-left-side{
-		padding-right: 15px;
-	}
-	.services-left-area-content .image-box{
-		margin-left: 175px;
 	}
 	/* 6. how_we_do area style */
 	.how-we-do-slider{
 		margin-top: -150px;
 	}
-	.how-we-do-bottom-left-area{
-		padding-right: 0;
-	}
 	/* 9. prices-area style */
-	.prices-area .big-text{
+	.themeoo-prices-area .big-text{
 		font-size: 90px;
 	}
 	.pricing-featured{
@@ -59,6 +54,10 @@
 /* Tablet desktop */
 @media(max-width:992px){
 	/* 2. header area style */
+	.themeoo-menu-area{
+		position: unset;
+		display: unset;
+	}
 	.hamburger-menu{
 		display: block;
 	}
@@ -75,7 +74,7 @@
 		transform: rotate(-45deg);
 		bottom: 0;
 	}
-	.header_area nav{
+	.temeoo-header_area nav{
 		position: absolute;
 		top: 100%;
 		left: -100%;
@@ -84,31 +83,49 @@
 		transition: all 0.3s ease-out 0s;
 		overflow: hidden;
 		z-index: 9999;
+		margin-top: -1px;
 	}
-	.header_area nav.active{
+	.temeoo-header_area nav.active{
 		left: 0;
 	}
-	.header_area nav ul{
+	.temeoo-header_area nav ul{
 		flex-direction: column;
 	}
-	.header_area nav ul li a{
+	.temeoo-header_area nav ul li a{
 		color: #000000;;
 		padding: 32px 16px;
 		height: 60px;
 		line-height: 0;
 	}
-	.header_area nav ul li a:hover{
+	.temeoo-header_area nav ul li:first-child a{
+		padding-left: 16px;
+	}
+	.temeoo-header_area nav ul li a:hover{
 		border-bottom:none;
 		color: #000000;
 		background-color: #32beff;
 	}
+	.logo{
+		position: absolute;
+		margin-right: 0;
+		margin-left: 15px;
+		left: 0;
+		right: auto;
+	}
 
 	/* 3. slider area style*/
+	.slides-contend-box .big-text{
+		margin-bottom: 30px;
+	}
 	.slides-contend-box{
-		padding: 140px 0;
+		padding-top:0;
 	}
 	.slides-contend-box h1{
 		font-size: 65px;
+		margin: 20px 0;
+	}
+	.slides-contend-box .slides-btn-area{
+		margin-top: 72px;
 	}
 	/* 4. about-area style */
 	.about-left-content{
@@ -119,14 +136,18 @@
 		font-size: 60px;
 	}
 	/* 5. services area style */
-	.services-area{
+	.themeoo-services{
 		padding-bottom: 275px;
 	}
-	.cta-are{
-		padding: 40px;
+	.cta-area{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 	}
-	.cta-are p{
-		font-size: 20px;
+	.cta-area .cta-btn-box{
+		margin-left: 0;
+		margin-top: 30px;
 	}
 	/* 6. how_we_do area style */
 	.how-we-do-slider{
@@ -140,14 +161,8 @@
 	.filters li:not(:last-child) a::after{
 		margin-left: 10px;
 	}
-	/* 8. team-area style */
-	.team-area-left-area{
-		margin-right: 0px;
-		margin-bottom: 60px;
-		padding-bottom: 20px;
-	}
 	/* 9. prices-area style */
-	.prices-area .big-text{
+	.themeoo-prices-area .big-text{
 		font-size: 70px;
 	}
 	.pricing-table .pricing{
@@ -164,33 +179,7 @@
 	.timeline-top-area p{
 		padding-left: 0;
 	}
-	.timeline-img-box{
-		margin-bottom: 10px;
-	}
-	.timeline-item .order-lg-1 .timeline-info::after{
-		left: 0;
-	}
 
-	.timeline-item .order-lg-1 .timeline-info{
-		text-align: left;
-		padding-right: 0;
-	}
-	.timeline-item .order-lg-2 .timeline-img-box{
-		padding-left: 0;
-	}
-	.timeline-item .order-lg-1 .timeline-img-box{
-		text-align: left;
-		padding-right: 0;
-	}
-	.timeline-item .order-lg-2 .timeline-info{
-		padding-left: 0;
-	}
-
-	.timeline-marker{
-		position: absolute;
-		left: 0;
-		transform: translateX(-100%);
-	}
 	/* 11. contact-us style */ 
 	.contact-left-side{
 		margin-bottom: 80px;
@@ -220,18 +209,21 @@
 		.copyright{
 			margin-bottom: 30px;
 		}
+		.footer-social-site{
+			justify-content: flex-start;
+		}
 }
 /*  mobile */
 @media(max-width:768px){
 		/* 3. slider area style*/
 		.slides-contend-box{
-			padding: 120px 0;
+			padding-top: 0;
 		}
 		.slides-contend-box h1{
 			font-size: 85px;
 		}
 		/* 5. services area style */
-		.services-area{
+		.themeoo-services{
 			padding-bottom: 245px;
 		}
 		/* 6. how_we_do area style */
@@ -242,6 +234,33 @@
 			margin-right: auto;
 			margin-left: auto;
 			width: 280px;
+		}
+		.timeline-item-content{
+			flex-direction: column;
+		}
+		.timeline-item:nth-child(odd) .timeline-item-content,
+		.timeline-item:nth-child(even) .timeline-item-content{
+			flex-direction: column;
+		}
+		.timeline-item:nth-child(odd) .timeline-img-box,
+		.timeline-item:nth-child(even) .timeline-img-box,
+		.timeline-item:nth-child(odd) .timeline-info,
+		.timeline-item:nth-child(even) .timeline-info{
+			margin-left: 72px;
+			margin-right: 0;
+			text-align: left;
+		}
+		.timeline-info{
+			width: 100%;
+		}
+		.timeline-img-box{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.timeline-marker{
+			position: absolute;
+			left: 0;
+			transform: translateX(-100%);
 		}
 		.footer-logo{
 			border: none;
@@ -256,7 +275,7 @@
 		}
 		/* 3. slider area style*/
 		.slides-contend-box{
-			padding: 100px 0;
+			padding-top: 0;
 		}
 		.slides-contend-box .big-text{
 			font-size: 80px;
@@ -284,24 +303,20 @@
 		}
 		/* 5. services area style */
 		.services-left-area-content .rotate-text-box{
-			width: 294px;
-			height: 110px;
-			font-size: 20px;
+			padding-left: 30px;
 		}
 		.services-left-area-content .rotate-text-box .big-text{
-			font-size: 60px;
-			line-height: 40px;
+			font-size: 70px;
+			line-height: 50px;
 		}
 		.services-left-area-content .image-box{
-			margin-left: 111px;
-			width: 179px;
-			height: 294px
+			height: 340px;
 		}
-		.cta-are{
+		.cta-area{
 			padding: 20px;
 		}
 		/* 5. services area style */
-		.services-area{
+		.themeoo-services{
 			padding-bottom: 250px;
 		}
 		/* 6. how_we_do area style */
@@ -314,7 +329,7 @@
 		.how-we-do-slider .swiper-slide-active::after{
 			display: none;
 		}
-		.how-we-do-bottom-left-area h2{
+		.how-we-do-desc h2{
 			font-size: 28px;
 		}
 		.progress-item .proress-label{
@@ -333,17 +348,14 @@
 			margin-left: 5px;
 		}
 		/* 8. team-area style */
-		.team-area-left-area{
-			padding-right: 0;
-		}
-		.team-area h2{
+		.themeoo-team-area h2{
 			font-size: 28px;
 		}
 		/* 9. prices-area style */
-		.prices-area .big-text{
+		.themeoo-prices-area .big-text{
 			font-size: 55px;
 		}
-		.prices-area .medium-text{
+		.themeoo-prices-area .medium-text{
 			font-size: 28px;
 		}
 		.pricing-header{
@@ -359,8 +371,11 @@
 		.timeline-top-area{
 			padding: 50px 20px;
 		}
-		.timeline-item{
-			padding-left: 0;
+		.timeline-item:nth-child(odd) .timeline-img-box,
+		.timeline-item:nth-child(even) .timeline-img-box,
+		.timeline-item:nth-child(odd) .timeline-info,
+		.timeline-item:nth-child(even) .timeline-info{
+			margin-left: 0;
 		}
 		.timeline-marker{
 			display: none;

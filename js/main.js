@@ -3,7 +3,7 @@
 
 	// hamburger-menu
 	$('.hamburger-menu').click(function () {
-		$('.header_area nav').toggleClass('active')
+		$('.temeoo-header_area nav').toggleClass('active')
 		$('.hamburger-menu').toggleClass('toggle')
 	});
 
@@ -12,9 +12,9 @@
 	$(window).on('scroll', function () {
 		var scroll = $(window).scrollTop();
 		if (scroll < 245) {
-			$(".header-sticky").removeClass("sticky");
+			$(".temeoo-header_area").removeClass("sticky");
 		} else {
-			$(".header-sticky").addClass("sticky");
+			$(".temeoo-header_area").addClass("sticky");
 		}
 	});
 
@@ -90,7 +90,7 @@
 
 
 	//image loaded 
-	$('#portfolio-are').imagesLoaded(function () {
+	$('#portfolio-area').imagesLoaded(function () {
 		// images have loaded
 
 		//protfolion-mansonary-layout
